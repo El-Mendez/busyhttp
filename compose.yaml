@@ -1,0 +1,11 @@
+services:
+  web:
+    image: elmendez/busyhttp
+    ports:
+      - '8080:8080'
+      - '3030:3030'
+    environment:
+      BUSY_STARTUP_TIME_MS: 10000
+      BUSY_SHUTDOWN_TIME_MS: 10000
+      BUSY_READY_TIME_MS: 10000
+      BUSY_ADDRESS: ':3030'
